@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# env files
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+backend/.venv/
+
+# databases
+*.db
+backend/supportflow.db
+
+# node
+node_modules/
+frontend/node_modules/
+
+# next
+.next/
+frontend/.next/
+out/
+
+# logs
+*.log
+
+# vscode
+.vscode/
+
+# alembic cache / misc
+.pytest_cache/
+.mypy_cache/

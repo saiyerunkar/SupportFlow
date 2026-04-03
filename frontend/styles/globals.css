@@ -1,0 +1,167 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-muted: #f9fafb;
+  --border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --danger: #dc2626;
+  --warning: #d97706;
+  --neutral: #6b7280;
+  --success: #16a34a;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --radius: 12px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.app-input,
+.app-select,
+.app-textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: var(--text);
+}
+
+.app-textarea {
+  resize: vertical;
+}
+
+.app-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background: var(--primary-hover);
+}
+
+.app-button-secondary {
+  background: white;
+  color: var(--text);
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.app-button-danger {
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  margin: 0;
+}
+
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.app-table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: white;
+}
+
+.badge-high {
+  background: var(--danger);
+}
+
+.badge-medium {
+  background: var(--warning);
+}
+
+.badge-low {
+  background: var(--neutral);
+}
+
+.badge-status {
+  background: #e5e7eb;
+  color: var(--text);
+}
+
+.metric-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
