@@ -5,6 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 
 import { queryClient } from "@/lib/queryClient";
 import { useAuthStore } from "@/store/authStore";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import "@/styles/globals.css";
 
@@ -21,9 +22,11 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [user, router]);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      {!publicRoutes.includes(router.pathname) && <Navbar />}
-      <Component {...pageProps} />
-    </QueryClientProvider>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        {!publicRoutes.includes(router.pathname) && <Navbar />}
+        <Component {...pageProps} />
+      </QueryClientProvider>
+    </ThemeProvider>
   );
 }
