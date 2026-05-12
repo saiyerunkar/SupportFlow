@@ -55,12 +55,6 @@ FastAPI-based REST API server with business logic, database models, authenticati
 ### `frontend/`
 Next.js React application providing the user interface with dashboards, ticket management, Kanban boards, analytics views, and authentication.
 
-### `docs/`
-Documentation and utilities including flowcharts and diagrams for system architecture and workflows.
-
-### `scripts/`
-Development and maintenance utility scripts.
-
 ## Tech Stack
 
 **Backend:**
